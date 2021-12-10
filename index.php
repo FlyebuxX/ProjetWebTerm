@@ -11,7 +11,8 @@
     <div id="container">
         <div class="top-page">
             <div class="banner">
-                <img src="" alt="main-banner" class="banner-img">
+                <img src="img/main-banner.svg" alt="main-banner" class="banner-img">
+                <!-- <img src="img/second-banner.jpg" alt="seconary-banner"> -->
             </div>
             <div class="banner-titles">
                 <h1 class="fst-title"></h1>
@@ -57,7 +58,7 @@
             </div>
         </div>
 
-    </div>   
+    </div>
 </body>
 
 
