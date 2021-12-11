@@ -1,5 +1,6 @@
 <!-- IMPORT HEADER -->
 <?php
+    $title = "Accueil";
     require 'components/header.php';
 ?>
 
