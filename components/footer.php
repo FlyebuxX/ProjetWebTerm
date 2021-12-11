@@ -6,43 +6,33 @@
             </div>
             <div class="second-part part">
                 <ul>
-                    <li>Actes réglementaires</li>
-                    <li>statistiques</li>
-                    <li>Charte de confidentialité</li>
+                    <li>Connexion</li>
+                    <li>Statistiques</li>
+                    <li>Aller à l'application</li>
                     <li>Contactez-nous</li>
                     <li>Le projet</li>
-                    <li>Partage</li>
-                    <li>Forum</li>
-                    <li>Interactions – Le magazine</li>
-                    <li>Progression</li>
                 </ul>
             </div>
             <div class="third-part part">
                 <ul>
-                    <li>Course à pied</li>
-                    <li>VTT</li>
-                    <li>Randonée</li>
-                    <li>Divers sports</li>
-                    <li>Relais handicap</li>
-                    <li>Offres premium</li>
-                    <li>Tout sur Statistics</li>
-                    <li>Chat</li>
-                    <li>Web TV</li>
+                    <li>Fiche 1</li>
+                    <li>Fiche 2</li>
+                    <li>Fiche 3</li>
+                    <li>Fiche 4</li>
+                    <li><a href="https://www.lycee-louis-vincent.fr/">Lycée du développeur</a></li>
                 </ul>
             </div>
         </div>
         <div class="socials">
-            <div class="social insta"><i class="fab fa-instagram"></i></div>
-            <div class="social twitter"><i class="fab fa-twitter"></i></div>
-            <div class="social facebook"><i class="fab fa-facebook"></i></div>
-            <div class="social linkedin"><i class="fab fa-linkedin"></i></div>
-            <div class="social youtube"><i class="fab fa-youtube"></i></div>
-            <div class="social github"><i class="fab fa-github"></i></div>
+            <div class="social twitter"><a href="https://twitter.com/louisvincent57"><i class="fab fa-twitter"></i></a></div>
+            <div class="social facebook"><a href="https://www.facebook.com/groups/LouisVincent/"><i class="fab fa-facebook"></i></a></div>
+            <div class="social youtube"><a href="https://www.youtube.com/channel/UCmJIRE7hK5PJTk-tUrR-lMA"><i class="fab fa-youtube"></i></a></div>
+            <div class="social github"><a href="https://github.com/FlyebuxX/"><i class="fab fa-github"></i></a></div>
         </div>
         <div class="mentions">
-            <p class="mention-paragraph">Crédits</p>
-            <p class="mention-paragraph">Mentions légales</p>
-            <p class="mention-paragraph">Cookies</p>
+            <p class="mention-p">Crédits</p>
+            <p class="mention-p">Mentions légales</p>
+            <p class="mention-p">Cookies</p>
         </div>
     </div>
 </footer>

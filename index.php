@@ -5,65 +5,79 @@
 
 
 <body>
-    
-    <?php require 'components/navbar.php'; ?>
 
     <div id="container">
-        <div class="top-page">
+        <?php require 'components/navbar.php'; ?>
+
+        <div class="fst-part">
+
             <div class="banner">
-                <img src="img/main-banner.svg" alt="main-banner" class="banner-img">
-                <!-- <img src="img/second-banner.jpg" alt="seconary-banner"> -->
-            </div>
-            <div class="banner-titles">
-                <h1 class="fst-title"></h1>
-                <h2 class="snd-title"></h2>
-            </div>
-            <button class="gs-btn"><a href="app.php" class="gs-btn-link">Je teste l'application</a></button>
-        </div>
+                <img src="img/movie_night.svg" alt="movie-night" class="banner-img">
 
-        <div class="bottom_page">
-            <div class="showcase-content">
-                <section class="showcase-article">
-                    <img src="" alt="">
-                    <p class="l-text">Consultez les statistiques de vos séances en toute simplicité</p>
-                </section>
-
-                <section class="showcase-article">
-                    <img src="" alt="">
-                    <p class="l-text">Profitez d'une interface entièrement sécurisée</p>
-                </section>
-
-                <section class="showcase-article">
-                    <img src="" alt="">
-                    <p class="l-text">Visualisez vos progrès et planifiez vos entraînements</p>
-                </section>
-
-                <div class="gsub">
-                    <h1 class="gsub-title">Inscrivez-vous maintenant</h1>
-                    <p class="gsub-p">
-                        Cela prend seulement quelques minutes pour créer un compte et commencer une nouvelle aventure.<br>Si vous avez des questions, n'hésitez pas à contacter notre équipe support.
-                    </p>
-
-                    <div class="mails">
-                        <div class="mails-input">
-                            <input type="email" placeholder="email@example.com" class="email-input">
-                        </div>
-
-                        <div class="mails-btn">
-                            <button class="gsub-btn">S'inscire gratuitement</button>
-                            <p><a href="connexion.html">Déjà inscrit ?</a></p>
-                        </div>
-                    </div>
+                <div class="banner-titles">
+                    <h1>Toutes les statistiques de vos films préférés</h1>
+                    <h2>CinéStats est une plateforme qui vous permet, entre autres, de pouvoir consulter les statistiques de quelques 106 000 distributions, 4700 réalisateurs & films. Et cela et toute simplicité !</h2>
                 </div>
+                
+                <button class="gs-btn"><a href="app.php" class="gs-btn-link">Lancer à l'application</a></button>
+
+            </div>
+
+        </div>
+
+        <div class="snd-part">
+            <div class="showcase">
+                <section class="show">
+                    <img src="img/analytics.svg" alt="analytics-img">
+                    <p class="showcase-p">Utilisez notre moteur de recherche comportant de nombreux critères de sélection</p>
+                </section>
+
+                <section class="show">
+                    <img src="img/security.svg" alt="secutiry-img">
+                    <p class="showcase-p">Profitez d'une interface sécurisée qui respecte le RGPD</p>
+                </section>
+
+                <section class="show">
+                    <img src="img/search.svg" alt="search-img">
+                    <p class="showcase-p">Effectuez des recherches parmi une large base de données</p>    
+                </section>
+
+                <section class="show">
+                    <img src="img/tv.svg" alt="tv-img">
+                    <p class="showcase-p">Vivez pleinement vos expériences filmiques</p>
+                </section>
             </div>
         </div>
+
+
+        <div class="thd-part">
+          <h1 class="ga-title">Accéder en avant première à nos bases de données</h1>
+          <p class="ga-p">
+            Cela prend seulement quelques minutes pour s'inscrire gratuitement pour accéder<br>à nos bases. Si vous avez un quelconque problème, n'hésitez pas à contacter l'équipe support.
+          </p>
+          <div class="mails">
+              <div class="left-part">
+                <input type="email" placeholder="email@exemple.com">
+              </div>
+            
+
+                <div class="right-part">
+                    <button class="gs-btn-mail"><a href="inscription.php">Accéder gratuitement</a></button>
+                    <p><a href="connexion.html">Déjà inscrit ?</a></p>
+                </div>
+          </div>
+
+        </div>
+
 
     </div>
+    
+    <?php
+        require 'components/footer.php';
+    ?>
+
 </body>
 
-
-<!-- IMPORT  -->
-<?php require 'components/footer.php'; ?>
 
 
 
