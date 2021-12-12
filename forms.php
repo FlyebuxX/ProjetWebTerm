@@ -2,20 +2,23 @@
     $title = "Application";
     require 'components/header.php';
 
-    $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "Xoneye@4");
-    var_dump($_POST['nb1']);
-    echo "<table>";
-    echo "<th>Nom de films de la base dont le nom commence par \"The\"</th>";
-    
-    $query11 = $db->query('SELECT Titre_Original FROM films WHERE lower(Titre_Original) like "the%" LIMIT ' . intval($_POST['nb1']));
-    // $query11 = $db->query('SELECT Titre_Original FROM films WHERE lower(Titre_Original) like "the%" LIMIT' . $_POST['nb1'] . "'");
-
-    while ($donnees = $query11 -> fetch()) {
-        echo '<tr><td>' . $donnees['Titre_Original'] . '</td><tr><br>';
+    if (!isset($_GET['nb1'])) {
+        $_GET['nb1'] = 10;
     }
-    $query11 -> closeCursor();
 
-    echo "</table>";
+    if (!isset($_GET['nb2'])) {
+        $_GET['nb2'] = 10;
+    }
+
+    if (!isset($_GET['nb3'])) {
+        $_GET['nb3'] = 10;
+    }
+
+    if (!isset($_GET['nb4'])) {
+        $_GET['nb4'] = 10;
+    }
+
+    $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "Xoneye@4");
     
 ?>
 
@@ -34,22 +37,61 @@
     </nav>
 
     <div class="forms">
-        <?php
-            
-            // $db = new PDO('mysql:host=localhost;dbname=dbcinema;charset=utf8', 'root', "Teqozi+1");  
-        ?>
         <div class="form" id="fiche1">
-            <form action="forms.php" method="post">
-                <label for="nb1">Nombre de résultats</label>
-                <input type="range" id="nb_resultat" name="nb1" min="0" max="976" value="10">
-                <input type="submit" value="Rechercher">
+            <form action="forms.php" method="get">
+                <div class="left-part">
+                    <label for="nb1">Nombre de résultats</label>
+                    <input type="number" id="nb_resultat" name="nb1" min="0" max="976" value="10">
+                </div>
+                <div class="right-part">
+                    <input type="submit" value="Afficher">
+                </div>
             </form>
-
+            <?php require 'queries/form1/query1.php'; ?>
         </div>
-        <div class="form" id="fiche2"><?php require 'queries/form1/query2.php'?></div>
-        <div class="form" id="fiche3"><?php require 'queries/form1/query3.php'?></div>
-        <div class="form" id="fiche4"><?php require 'queries/form1/query4.php'?></div>
+
+        <div class="form" id="fiche2">
+            <form action="forms.php" method="get">
+                <div class="left-part">
+                    <label for="nb2">Nombre de résultats</label>
+                    <input type="number" id="nb_resultat" name="nb2" value="10">
+                </div>
+                <div class="right-part">
+                    <input type="submit" value="Afficher">
+                </div>
+            </form>
+            <?php require 'queries/form1/query2.php'?>
+        </div>
+
+        <div class="form" id="fiche3">
+            <form action="forms.php" method="get">
+                <div class="left-part">
+                    <label for="nb3">Nombre de résultats</label>
+                    <input type="number" id="nb_resultat" name="nb3" value="10">
+                </div>
+                <div class="right-part">
+                    <input type="submit" value="Afficher">
+                </div>
+            </form>
+            <?php require 'queries/form1/query3.php'?>
+        </div>
+
+        <div class="form" id="fiche4">
+            <form action="forms.php" method="get">
+                <div class="left-part">
+                    <label for="nb4">Nombre de résultats</label>
+                    <input type="number" id="nb_resultat" name="nb4" value="10">
+                </div>
+                <div class="right-part">
+                    <input type="submit" value="Afficher">
+                </div>
+            </form>
+            <?php require 'queries/form1/query4.php'?>
+        </div>
     </div>
 
 </div>
+
+<?php require 'components/footer.php'; ?>
+
 </body>
