@@ -58,14 +58,13 @@
           </p>
           <div class="mails">
               <div class="left-part">
-                <input type="email" placeholder="email@exemple.com">
+                <input type="email" type="mail" placeholder="email@exemple.com">
               </div>
-            
 
-                <div class="right-part">
-                    <button class="gs-btn-mail"><a href="inscription.php">Accéder gratuitement</a></button>
-                    <p><a href="connexion.html">Déjà inscrit ?</a></p>
-                </div>
+            <div class="right-part">
+                <button class="gs-btn-mail"><a href="inscription.php">Accéder gratuitement</a></button>
+                <p><a href="connexion.html">Déjà inscrit ?</a></p>
+            </div>
           </div>
 
         </div>

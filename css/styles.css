@@ -316,7 +316,7 @@ footer li {
     text-decoration: underline #FFF;
 }
 
-.right-part {
+.thd-part .right-part {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -408,6 +408,8 @@ table {
 
 .left-part label {
     color: #0072f4;
+    display: flex;
+    align-self: center;
 }
 
 input[type='number'] {
@@ -416,20 +418,41 @@ input[type='number'] {
     padding: 2px;
     font-weight: 400;
     background-color: rgba(188, 206, 224, 0.884);
+    padding: 10px 10px;
 }
 
-form {
-    width: 10%;
+.forms .form {
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 200px auto auto 200px;
-    height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px auto 50px auto;
+    height: 100%;
     gap: 10px;
 }
 
-form input[type="submit"] {
+.forms .form .left-part {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.forms form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.form form input[type="submit"] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     padding: 10px 10px;
@@ -439,6 +462,46 @@ form input[type="submit"] {
     border-style: none;
 }
 
-form input[type="submit"]:hover {
+.form form input[type="submit"]:hover {
     cursor: pointer;
+}
+
+#code-show1 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+
+#code-show2 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+
+#code-show3 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+
+#code-show4 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
 }
