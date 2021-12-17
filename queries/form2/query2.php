@@ -1,0 +1,13 @@
+<?php
+    echo "<table>";
+    echo "<th>Titres des films tournés en japonais dans l'ordre croissant de leur durée</th>";
+    
+    $query22 = $db->query('SELECT DISTINCT Titre_Original FROM films WHERE Langue_Originale = "ja" AND Durée != "" ORDER BY Durée ASC LIMIT ' . $_GET['nb22']);
+    // $query11 = $db->query('SELECT Titre_Original FROM films WHERE lower(Titre_Original) like "the%" LIMIT' . $_POST['nb1'] . "'");
+
+    while ($donnees = $query22 -> fetch()) {
+        echo '<tr><td>' . $donnees['Titre_Original'] . '</td><tr>';
+    }
+    $query11 -> closeCursor();
+
+    echo "</table>";
