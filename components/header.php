@@ -16,8 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet"> 
+
     <!-- Import Icons -->
-     <script src="https://kit.fontawesome.com/cb5781e2cc.js" crossorigin="anonymous"></script> 
+     <script src="https://kit.fontawesome.com/cb5781e2cc.js" crossorigin="anonymous"></script>
+
+     <!-- Vérification des affichages requêtes -->
+     <script src="assets/ON_OFF.js"></script>
     
     <title><?= $title; ?></title>
 </head>

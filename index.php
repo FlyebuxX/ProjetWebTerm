@@ -17,7 +17,7 @@
 
                 <div class="banner-titles">
                     <h1>Toutes les statistiques de vos films préférés</h1>
-                    <h2>CinéStats est une plateforme qui vous permet, entre autres, de pouvoir consulter les statistiques de quelques 106 000 distributions, 4700 réalisateurs & films. Et cela et toute simplicité !</h2>
+                    <h2>CinéStats est une plateforme qui vous permet de consulter les statistiques de quelques 106 000 distributions, 4700 réalisateurs & films. Et cela et toute simplicité !</h2>
                 </div>
                 
                 <button class="gs-btn"><a href="app.php" class="gs-btn-link">Lancer à l'application</a></button>

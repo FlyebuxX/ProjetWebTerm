@@ -21,8 +21,6 @@ body {
 
 /* END GENERAL BINDS */
 
-
-
 /* NAVBAR */
 
 #navbar {
@@ -235,7 +233,7 @@ footer li {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 46%;
-    margin: auto;
+    margin: 0 auto 30px auto;
 }
 
 .showcase section img {
@@ -249,7 +247,7 @@ footer li {
     justify-content: space-between;
     height: 330px;
     width: 300px;
-    margin: 0 0 100px 0;
+    margin: 0 0 140px 0;
 }
 
 .showcase-p {
@@ -324,14 +322,20 @@ footer li {
     font-size: .9em;
 }
 
-.nav-forms {
+/* END LANDING PAGE */
+
+
+
+/* FORMS PAGE*/
+
+.nav-queries {
     font-weight: 600;
     font-size: 1em;
     width: 40%;
     margin: 30px auto;
 }
 
-.nav-forms ol {
+.nav-queries ol {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -387,13 +391,16 @@ td {
     border: 1px solid #FFF;
     padding: 10px;
     text-align: center;
+    background-color: rgb(91, 83, 119);
 }
 
 th {
     font-weight: bold;
-    color: violet;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     width: 750px;
+    background: linear-gradient(to bottom right, hsl(234, 89%, 15%), hsl(266, 95%, 16%));
 }
 
 table {
@@ -430,6 +437,7 @@ input[type='number'] {
     margin: 200px auto 50px auto;
     height: 100%;
     gap: 10px;
+    min-height: 200px;
 }
 
 .forms .form .left-part {
@@ -466,7 +474,8 @@ input[type='number'] {
     cursor: pointer;
 }
 
-#code-show1 {
+
+#code-show11 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -476,7 +485,52 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show2 {
+#code-show12 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+#code-show13 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+#code-show14 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+#code-show21 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+#code-show22 {
+    width: 100%;
+    display: none;
+    background-color: hsl(216, 53%, 9%);
+    border: 1px solid #933ae7;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 6px;
+}
+#code-show23 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -486,7 +540,7 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show3 {
+#code-show24 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -496,7 +550,7 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show4 {
+#code-show25 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -505,3 +559,35 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
+code {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+span.sql-word {
+    color: #708;
+}
+
+
+/* END FORMS PAGE */
+
+
+/* NAV FORMS */
+
+.nav-forms nav {
+    display: flex;
+    align-items: center;
+    background: rgb(6, 26, 53);
+    height: 3rem;
+}
+
+.nav-forms ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* END NAV FORMS */

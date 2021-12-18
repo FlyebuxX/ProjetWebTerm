@@ -2,7 +2,7 @@
             <a href="#" class="brand"><img src="img/logo.png" alt="logo" class="logo"></a>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
-                <li><a href="forms.php">Projet</a></li>
+                <li><a href="page1.php">Projet</a></li>
                 <li><a href="app.php">Application</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>

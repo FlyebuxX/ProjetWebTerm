@@ -15,10 +15,10 @@
             </div>
             <div class="third-part part">
                 <ul>
-                    <li><a href="forms.php#fiche1">Fiche 1</a></li>
-                    <li><a href="forms.php#fiche2">Fiche 2</a></li>
-                    <li><a href="forms.php#fiche3">Fiche 3</a></li>
-                    <li><a href="forms.php#fiche4">Fiche 4</a></li>
+                    <li><a href="page1.php">Fiche 1</a></li>
+                    <li><a href="page2.php">Fiche 2</a></li>
+                    <li><a href="page3.php">Fiche 3</a></li>
+                    <li><a href="page4.php">Fiche 4</a></li>
                     <li><a href="https://www.lycee-louis-vincent.fr/">Lycée du développeur</a></li>
                 </ul>
             </div>
