@@ -35,17 +35,17 @@
 
                 <section class="show">
                     <img src="img/security.svg" alt="secutiry-img">
-                    <p class="showcase-p">Profitez d'une interface sécurisée qui respecte le RGPD</p>
+                    <p class="showcase-p">Profitez d'une interface sécurisée qui respecte le RGPD. Nous n'utilisons aucune de vos données</p>
                 </section>
 
                 <section class="show">
                     <img src="img/search.svg" alt="search-img">
-                    <p class="showcase-p">Effectuez des recherches parmi une large base de données</p>    
+                    <p class="showcase-p">Effectuez des recherches parmi une large base de données grâce à notre moteur de rechercher</p>    
                 </section>
 
                 <section class="show">
                     <img src="img/tv.svg" alt="tv-img">
-                    <p class="showcase-p">Vivez pleinement vos expériences filmiques</p>
+                    <p class="showcase-p">Vivez pleinement vos expériences filmiques et voyez le cinéma sous un jour nouveau</p>
                 </section>
             </div>
         </div>

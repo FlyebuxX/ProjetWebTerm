@@ -25,8 +25,8 @@
     <div class="forms">
         <div class="form" id="query1">
             <div class="left-part">
-                <form action="page2.php" method="get" oninput="result.value=parseInt(nb21.value)">
-                    <label for="nb21">Nombre de résultats</label>
+                <form action="page2.php#query1" method="get" oninput="result.value=parseInt(nb21.value)">
+                <label for="nb21">Afficher plus de résultats</label>
                     <input type="range" id="nb_resultat" name="nb21" min="0" max="1" value="1">
                     <output name="result">1</output>
                     <input type="submit" value="Afficher">
@@ -35,7 +35,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check21" onclick="is_checked(21)">
                     <div id="code-show21">
-                        <p><code>SELECT DISITINCT count(Réalisateur)<br>FROM realisateurs<br>LIMIT ' . $_GET['nb21']</code></p>
+                        <code><span class="sql-word">SELECT DISITINCT</span> count(Réalisateur)<br><span class="sql-word">FROM</span> realisateurs<br><span class="sql-word">LIMIT</span> ' . $_GET['nb21']</code>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@
 
         <div class="form" id="query2">
             <div class="left-part">
-                <form action="page2.php" method="get" oninput="result.value=parseInt(nb22.value)">
-                    <label for="nb22">Nombre de résultats</label>
+                <form action="page2.php#query2" method="get" oninput="result.value=parseInt(nb22.value)">
+                <label for="nb22">Afficher plus de résultats</label>
                     <input type="range" id="nb_resultat" name="nb22" min="0" max="16" value="10">
                     <output name="result">10</output>
                     <input type="submit" value="Afficher">
@@ -57,7 +57,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check22" onclick="is_checked(22)">
                     <div id="code-show22">
-                        <p><code>SELECT DISTINCT Titre_Original<br>FROM films<br>WHERE Langue_Originale = "ja" AND Durée != ""<br>ORDER BY Durée ASC<br>LIMIT ' . $_GET['nb1']</code></p>
+                        <code><span class="sql-word">SELECT DISTINCT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Langue_Originale = "ja" <span class="sql-word">AND</span> Durée != ""<br><span class="sql-word">ORDER BY</span> Durée <span class="sql-word">ASC</span><br><span class="sql-word">LIMIT</span> ' . $_GET['nb1']</code>
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@
 
         <div class="form" id="query3">
             <div class="left-part">
-                <form action="page2.php" method="get" oninput="result.value=parseInt(nb23.value)">
-                    <label for="nb23">Nombre de résultats</label>
+                <form action="page2.php#query3" method="get" oninput="result.value=parseInt(nb23.value)">
+                <label for="nb23">Afficher plus de résultats</label>
                     <input type="range" id="nb_resultat" name="nb23" min="0" max="25" value="10">
                     <output name="result">10</output>
                     <input type="submit" value="Afficher">
@@ -79,7 +79,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check23" onclick="is_checked(23)">
                     <div id="code-show23">
-                        <p><code>SELECT DISTINCT Titre_Original<br>FROM films<br>ORDER BY Année_Production ASC<br>LIMIT ' . $_GET['nb23']</code></p>
+                        <code><span class="sql-word">SELECT DISTINCT</span> Titre_Original<br><span class="sql-word">FROM films</span><br><span class="sql-word">ORDER BY</span> Année_Production <span class="sql-word">ASC</span><br><span class="sql-word">LIMIT</span> ' . $_GET['nb23']</code>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@
 
         <div class="form" id="query4">
             <div class="left-part">
-                <form action="page2.php" method="get" oninput="result.value=parseInt(nb24.value)">
-                    <label for="nb24">Nombre de résultats</label>
+                <form action="page2.php#query4" method="get" oninput="result.value=parseInt(nb24.value)">
+                <label for="nb24">Afficher plus de résultats</label>
                     <input type="range" id="nb_resultat" name="nb24" min="0" max="1" value="1">
                     <output name="result">1</output>
                     <input type="submit" value="Afficher">
@@ -101,7 +101,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check24" onclick="is_checked(24)">
                     <div id="code-show24">
-                        <p><code>SELECT avg(CAST(Revenus_Générés AS INT))<br>FROM films<br>WHERE Genres in ("Thriller") LIMIT ' . $_GET['nb24']</code></p>
+                        <code><span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT))<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres in ("Thriller") <span class="sql-word">LIMIT</span> ' . $_GET['nb24']</code>
                     </div>
                 </div>
             </div>
@@ -112,8 +112,8 @@
 
         <div class="form" id="query5">
             <div class="left-part">
-                <form action="page2.php" method="get" oninput="result.value=parseInt(nb25.value)">
-                    <label for="nb25">Nombre de résultats</label>
+                <form action="page2.php#query5" method="get" oninput="result.value=parseInt(nb25.value)">
+                <label for="nb25">Afficher plus de résultats</label>
                     <input type="range" id="nb_resultat" name="nb25" min="0" max="24" value="10">
                     <output name="result">10</output>
                     <input type="submit" value="Afficher">

@@ -1,6 +1,6 @@
 <?php
     echo "<table>";
-    echo "<th>Noms desfilms les plus anciens de la base</th>";
+    echo "<th>Noms des films les plus anciens de la base</th>";
     
     $query23 = $db->query('SELECT DISTINCT Titre_Original FROM films ORDER BY Année_Production ASC LIMIT ' . $_GET['nb23']);
 

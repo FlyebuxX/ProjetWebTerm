@@ -392,6 +392,7 @@ td {
     padding: 10px;
     text-align: center;
     background-color: rgb(91, 83, 119);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 th {
@@ -591,3 +592,102 @@ span.sql-word {
 }
 
 /* END NAV FORMS */
+
+
+
+/* CONTACT */
+
+.contact-form {
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5rem;
+    box-shadow: 10px 10px 30px #000, -10px -10px 30px rgb(6, 2, 19);
+    margin-bottom: 5rem;
+    background-color: rgba(22, 23, 39, 0.548);
+}
+
+.title-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.snd-form-title {
+    font-size: 14px;
+    font-family: Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+.border {
+    width: 10%;
+    height: .3rem;
+    margin: 0 auto 50px auto;
+    background-color: #933ae7;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.contact-fields input, .contact-form-textarea {
+    border-style: none;
+    border-radius: 2px;
+    padding-left: 15px;
+    background-color: rgb(5, 12, 22);
+    font-size: 16px;
+    color: rgb(214, 214, 216);
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    outline: 0;
+}
+
+.contact-form-btn {
+    transition: .7s ease;
+}
+
+.contact-form-btn:hover {
+    transition: .7s ease;
+    background-color: purple;
+}
+
+.contact-fields input:focus, .contact-form-textarea:focus {
+    border: 1px solid purple;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 15px;
+}
+
+.contact-fields label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.map-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 50%;
+    margin: auto auto 3rem auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.map-form p {
+    margin-right: 5%;
+    width: 20%;
+    line-height: 2em;
+}
+
+
+/* END CONTACT */
