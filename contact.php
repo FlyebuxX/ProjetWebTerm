@@ -1,5 +1,6 @@
 <?php
     $title = "Contact";
+    $css = "css/styles.css";
     require 'components/header.php';
     require 'components/navbar.php';
 
@@ -14,19 +15,19 @@
             <h2 class="snd-form-title">Nos équipes vous répondrons dans les plus brefs délais.</h2>    
     
             <form method="POST" class="contact-fields" action="contact.php">
-                <label for="">VOTRE NOM *</label>
+                <label for="">NOM *</label>
                 <input type="text" class="contact-form-text" name="nom" required>
 
-                <label for="">VOTRE PRENOM *</label>
+                <label for="">PRENOM *</label>
                 <input type="text" class="contact-form-text" name="prenom" required>
+
+                <label for="">EMAIL *</label>
+                <input type="email" class="contact-form-text" name="mail" required>
 
                 <label for="">OBJET DU MAIL *</label>
                 <input type="text" class="contact-form-text" name="object" required>
 
-                <label for="">VOTRE EMAIL *</label>
-                <input type="email" class="contact-form-text" name="mail" required>
-
-                <label for="">VOTRE MESSAGE *</label>
+                <label for="">MESSAGE *</label>
                 <textarea class="contact-form-textarea" name="message" required></textarea>
                 <input type="submit" name="submit-btn" class="contact-form-btn" value="Envoyer">
                 <input type="reset" class="contact-form-btn" value="Annuler tout">
@@ -53,7 +54,7 @@
                 echo "<script src=\"assets/confirmation.js\"></script>";
             }
         ?>
-
+    <script src="assets/change_bg2.js"></script>
     </div>
 
 </body>

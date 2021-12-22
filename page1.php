@@ -1,6 +1,6 @@
 <?php
     $title = "Projet - Fiche 1";
-
+    $css = "css/styles.css";
     require 'components/header.php';
     require 'assets/fix_nb.php';
 
@@ -109,13 +109,13 @@
                 <?php require 'queries/form1/query4.php'; ?>
             </div>
         </div>
-
+    <hr>
     </div>
 
     <?php require 'assets/nav-forms.php' ; ?>
-
+    <script src="assets/change_bg.js"></script>
 </div>
-
+<hr>
 <?php require 'components/footer.php'; ?>
 
 </body>

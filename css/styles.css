@@ -13,8 +13,9 @@ a {
 
 
 body {
-    background: hsl(217, 28%, 15%);
-    font-family: 'Raleway', 'Montserrat', sans-serif;
+    background-image: url("../img/camera.jpg");
+    background-position: 0 70%;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #FFF;
 }
@@ -47,24 +48,23 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    transition: .7S;
+    transition: .7s;
 }
 
 nav ul li a {
     color: #fff;
     padding: 0 20px;
-    font-size: 1.1em;
     text-decoration: none;
     transition: .7s;
 }
 
 nav ul li:hover {
-    transform: translateY(-1px);
+    transform: translateY(-.5px);
     transition: .5s;
 }
 
 nav ul li a:hover {
-    color: #933ae7;
+    color: #940808;
     transition: .3s;
 }
 
@@ -203,7 +203,6 @@ footer li {
 
 .fst-part {
     height: 993px;
-    background: center / contain no-repeat url("../img/bg-curvy-desktop.svg"), hsl(217, 28%, 15%);
     background-position: 0 400px;
 }
 
@@ -391,7 +390,7 @@ td {
     border: 1px solid #FFF;
     padding: 10px;
     text-align: center;
-    background-color: rgb(91, 83, 119);
+    background-color: rgba(85, 13, 13, 0.95);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -412,6 +411,7 @@ table {
     font-family: sans-serif;
     font-size: .8rem;
     margin: 0 auto 80px auto;
+    box-shadow: 10px 10px 30px rgb(36, 4, 4);
 }
 
 .left-part label {
@@ -465,7 +465,7 @@ input[type='number'] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     padding: 10px 10px;
-    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    background: rgb(61, 0, 0);
     color: #FFF;
     border-radius: 10px;
     border-style: none;
@@ -495,6 +495,7 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
 #code-show13 {
     width: 100%;
     display: none;
@@ -504,6 +505,7 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
 #code-show14 {
     width: 100%;
     display: none;
@@ -513,6 +515,7 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
 #code-show21 {
     width: 100%;
     display: none;
@@ -522,6 +525,7 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
 #code-show22 {
     width: 100%;
     display: none;
@@ -531,6 +535,7 @@ input[type='number'] {
     margin-left: 20px;
     padding: 6px;
 }
+
 #code-show23 {
     width: 100%;
     display: none;
@@ -580,6 +585,7 @@ span.sql-word {
     align-items: center;
     background: rgb(6, 26, 53);
     height: 3rem;
+    margin: auto;
 }
 
 .nav-forms ul {
@@ -604,7 +610,7 @@ span.sql-word {
     padding: 5rem;
     box-shadow: 10px 10px 30px #000, -10px -10px 30px rgb(6, 2, 19);
     margin-bottom: 5rem;
-    background-color: rgba(22, 23, 39, 0.548);
+    background-color: rgba(20, 6, 6, 0.9);
 }
 
 .title-form {

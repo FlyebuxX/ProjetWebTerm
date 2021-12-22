@@ -130,12 +130,13 @@
                 <?php require 'queries/form2/query5.php'; ?>
             </div>
         </div>
-
+    <hr>
     </div>
 
 
     <?php require 'assets/nav-forms.php' ; ?>
-
+    <script src="assets/change_bg.js"></script>
+    <hr>
 </div>
 
 <?php require 'components/footer.php'; ?>
