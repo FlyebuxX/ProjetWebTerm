@@ -1,25 +1,31 @@
 <?php
-    $title = "Projet - Fiche 1";
-    $css = "css/styles.css";
-    require 'components/header.php';
+    $title = "Projet - Salle n°1";
+    $css = "css/pages.css";
     require 'assets/fix_nb.php';
 
     $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "Xoneye@4");
     
+    require 'components/header.php';
 ?>
 
 <body>
 <div id="container">
-    <?php require 'components/navbar.php'; ?>
+    <?php
+        $current = "<li><a href=\"index.php\">01. ACCUEIL</a></li>
+        <li><a href=\"page1.php\" class=\"selected\">02. PROJET</a></li>
+        <li><a href=\"app.php\">03. APPLICATION</a></li>
+        <li><a href=\"contact.php\">04. CONTACT</a></li>";
+        require 'components/navbar.php'; 
+    ?>
     <h1 class="form-title">Requêtes de la fiche n° 1</h1>
 
     <nav class="nav-queries">
-        <ol>
+        <ul>
             <li><a href="#query1">Requête n°1</a></li>
             <li><a href="#query2">Requête n°2</a></li>
             <li><a href="#query3">Requête n°3</a></li>
             <li><a href="#query4">Requête n°4</a></li>
-        </ol>
+        </ul>
     </nav>
 
     <div class="forms">
@@ -109,11 +115,9 @@
                 <?php require 'queries/form1/query4.php'; ?>
             </div>
         </div>
-    <hr>
     </div>
 
     <?php require 'assets/nav-forms.php' ; ?>
-    <script src="assets/change_bg.js"></script>
 </div>
 <hr>
 <?php require 'components/footer.php'; ?>

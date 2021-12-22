@@ -1,14 +1,20 @@
 <?php
     $title = "Contact";
-    $css = "css/styles.css";
+    $css = "css/contact.css";
     require 'components/header.php';
-    require 'components/navbar.php';
 
 ?>
 
 <script src="assets/send_message.js" type="text/javascript"></script>
 <body>
     <div id="container">
+    <?php
+        $current = "<li><a href=\"index.php\">01. ACCUEIL</a></li>
+        <li><a href=\"page1.php\">02. PROJET</a></li>
+        <li><a href=\"app.php\">03. APPLICATION</a></li>
+        <li><a href=\"contact.php\" class=\"selected\">04. CONTACT</a></li>";
+        require 'components/navbar.php'; 
+    ?>
         <div class="contact-form">
             <h1 class="title-form">Nous Contacter</h1>
             <div class="border"></div>
@@ -43,10 +49,11 @@
                 $to = 'valentin.eberhardt57@gmail.com';
                 $subject = $_POST['object'];
                 $message = $_POST['message'];
+                $message .= "\n\nEnvoi de :" . $_POST['prenom'] . " " . $_POST['nom'];
     
         
                 $headers = array(
-                    'From' => $_POST['nom'] . $_POST['prenom'] . $_POST['mail'],
+                    'From' => $_POST['mail'],
                     'Reply-To' => $_POST['mail'],
                 );
 
@@ -54,6 +61,7 @@
                 echo "<script src=\"assets/confirmation.js\"></script>";
             }
         ?>
+        
     <script src="assets/change_bg2.js"></script>
     </div>
 

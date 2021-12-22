@@ -1,0 +1,273 @@
+/* GENERALS BINDS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+body {
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, .6)), url('../img/room2.jpg');
+    background-position: 200% 410%;
+    background-size: cover, 100%;
+    background-attachment: scroll, fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+/* END GENERAL BINDS */
+
+
+
+/* NAVBAR */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+    font-family: 'Raleway', sans-serif;
+    z-index: 2;
+    letter-spacing: .1em;
+    padding: 0 0 0 4rem;
+    margin-top: 3rem;
+}
+
+.line {
+    position: absolute;
+    top: 3rem;
+    left: 20rem;
+    background-color: rgb(255, 51, 0);
+    width: 35rem;
+    height: 0.1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 18rem;
+    padding-left: 10rem;
+    background-color: rgba(156, 0, 0, 0.521);
+}
+
+.navbar ul {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    transition: .7s;
+}
+
+.navbar ul li a {
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.logo {
+    height: 200px;
+}
+
+.selected {
+    padding-bottom: 38px;
+    border-bottom: 2px solid #FFF;
+    border-width: 80%;
+}
+
+/* END NAVBAR */
+
+
+
+/* CONTACT */
+
+.contact-form {
+    width: 60%;
+    margin: 250px auto;
+    border-radius: 5px;
+    padding: 5rem;
+    box-shadow: 10px 10px 30px #000, -10px -10px 30px #000;
+    margin-bottom: 5rem;
+    background-color: rgba(20, 6, 6, 0.9);
+}
+
+.title-form {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.snd-form-title {
+    font-size: 14px;
+    font-family: Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+.border {
+    width: 10%;
+    height: .3rem;
+    margin: 0 auto 50px auto;
+    background-color: #fd00008e;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.contact-fields input, .contact-form-textarea {
+    border-style: none;
+    border-radius: 2px;
+    padding-left: 15px;
+    background-color: rgb(5, 1, 1);
+    font-size: 16px;
+    color: rgb(214, 214, 216);
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    outline: 0;
+}
+
+.contact-form-btn {
+    transition: .7s ease;
+}
+
+.contact-form-btn:hover {
+    transition: .7s ease;
+    background-color: #fd00008e;
+}
+
+.contact-fields input:focus, .contact-form-textarea:focus {
+    border: 1px solid #fd00008e;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 15px;
+}
+
+.contact-fields label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.map-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 50%;
+    margin: auto auto 3rem auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.map-form p {
+    margin-right: 5%;
+    width: 20%;
+    line-height: 2em;
+}
+
+
+/* END CONTACT */
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: hsl(0, 0%, 0%);
+}
+
+footer .container {
+    padding: 220px 80px 80px 80px ;
+}
+
+.logo-footer {
+    margin-left: 100px;
+    height: 160px;
+}
+
+.parts {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.part {
+    width: 30%;
+    height: 100%;
+}
+
+footer ul {
+    color: #fff;
+    line-height: 1.8em;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.socials {
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: auto;
+}
+
+.social i {
+    color: #fff;
+    background-color: #bd0019;
+    padding: 5px;
+    width: 100%;
+    border-radius: 2px;
+    opacity: .8;
+}
+
+.social i:hover {
+    cursor: pointer;
+}
+
+.mentions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 100px auto 0 auto;
+}
+
+.mention-p {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* END FOOTER */

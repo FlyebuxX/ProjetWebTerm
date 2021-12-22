@@ -1,6 +1,5 @@
 var lastScrollTop = 0;
 navbar = document.getElementById("navbar");
-nav = document.getElementsByClassName("navbar");
 
 window.addEventListener("scroll", function() {
     
@@ -17,5 +16,4 @@ window.addEventListener("scroll", function() {
     }
 
     lastScrollTop = scrollTop;
-    nav.style.background = "yellow";
 });

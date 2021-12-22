@@ -6,11 +6,17 @@
 ?>
 
 <body>
-    <?php require 'components/navbar.php'; ?>
+    <?php
+        $current = "<li><a href=\"index.php\" class=\"selected\">01. ACCUEIL</a></li>
+        <li><a href=\"page1.php\">02. PROJET</a></li>
+        <li><a href=\"app.php\">03. APPLICATION</a></li>
+        <li><a href=\"contact.php\">04. CONTACT</a></li>";
+        require 'components/navbar.php'; 
+    ?>
     <div id="container">
         <div id="banner">
             <div class="brand">
-                <h2>LES STATISTIQUES DE</h2>
+                <h2>TOUTES LES STATISTIQUES DE</h2>
                 <h1>VOS FILMS PRÉFÉRÉS</h1>
                 <p>CinéStats est une plateforme qui vous permet<br>de consulter les statistiques de quelques<br>106 000 distributions, 4700 réalisateurs & films.<br>Et cela en toute simplicité !</p>
             </div>

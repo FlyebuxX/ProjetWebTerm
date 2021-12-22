@@ -1,0 +1,1 @@
+document.body.style.background = "linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('img/room2.jpg')";
