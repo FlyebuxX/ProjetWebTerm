@@ -6,11 +6,10 @@
             </div>
             <div class="second-part part">
                 <ul>
-                    <li>Connexion</li>
-                    <li>Statistiques</li>
-                    <li>Aller à l'application</li>
-                    <li>Contactez-nous</li>
-                    <li>Le projet</li>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="page1.php">Le Projet</a></li>
+                    <li><a href="app.php">Aller à l'application</a></li>
+                    <li><a href="contact.php">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="third-part part">
@@ -30,9 +29,7 @@
             <div class="social github"><a href="https://github.com/FlyebuxX/"><i class="fab fa-github"></i></a></div>
         </div>
         <div class="mentions">
-            <p class="mention-p">Crédits</p>
-            <p class="mention-p">Mentions légales</p>
-            <p class="mention-p">Cookies</p>
+            <p class="mention-p"><a href="mentions.php">Mentions légales</a></p>
         </div>
     </div>
 </footer>

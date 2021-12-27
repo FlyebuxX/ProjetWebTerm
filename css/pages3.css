@@ -13,8 +13,8 @@ a {
 
 
 body {
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/room2.jpg');
-    background-position: 200% 410%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/room3.jpg');
+    background-position: 200% 15%;
     background-size: cover, 100%;
     background-attachment: scroll, fixed;
     font-family: 'Montserrat', sans-serif;
@@ -238,7 +238,7 @@ input[type='number'] {
     cursor: pointer;
 }
 
-#code-show21 {
+#code-show31 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -248,7 +248,7 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show22 {
+#code-show32 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -258,7 +258,7 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show23 {
+#code-show33 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -268,17 +268,7 @@ input[type='number'] {
     padding: 6px;
 }
 
-#code-show24 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #e73a3a;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show25 {
+#code-show34 {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
@@ -384,6 +374,7 @@ footer li {
     width: 60%;
     margin: 100px auto 0 auto;
 }
+
 .mention-p {
     color: #fff;
     font-weight: 600;

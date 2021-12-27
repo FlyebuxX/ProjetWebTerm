@@ -14,7 +14,7 @@ a {
 
 body {
     background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/room1.jpg');
-    background-position: 200% 410%;
+    background-position: 200% 15%;
     background-size: cover, 100%;
     background-attachment: scroll, fixed;
     font-family: 'Montserrat', sans-serif;
@@ -132,6 +132,10 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-shadow: 1px 1px 2px red;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: .5em;
+    width: 40%;
+    margin: auto;
 }
 
 td, th {
@@ -239,7 +243,7 @@ input[type='number'] {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
+    border: 1px solid #e73a3a;
     border-radius: 4px;
     margin-left: 20px;
     padding: 6px;
@@ -249,7 +253,7 @@ input[type='number'] {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
+    border: 1px solid #e73a3a;
     border-radius: 4px;
     margin-left: 20px;
     padding: 6px;
@@ -259,7 +263,7 @@ input[type='number'] {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
+    border: 1px solid #e73a3a;
     border-radius: 4px;
     margin-left: 20px;
     padding: 6px;
@@ -269,57 +273,7 @@ input[type='number'] {
     width: 100%;
     display: none;
     background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show21 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show22 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show23 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show24 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 6px;
-}
-
-#code-show25 {
-    width: 100%;
-    display: none;
-    background-color: hsl(216, 53%, 9%);
-    border: 1px solid #933ae7;
+    border: 1px solid #e73a3a;
     border-radius: 4px;
     margin-left: 20px;
     padding: 6px;
@@ -330,7 +284,7 @@ code {
 }
 
 span.sql-word {
-    color: rgb(173, 6, 6);
+    color: rgb(212, 12, 12);
 }
 
 .nav-forms nav ul {
@@ -417,9 +371,7 @@ footer li {
 
 .mentions {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     width: 60%;
     margin: 100px auto 0 auto;
 }

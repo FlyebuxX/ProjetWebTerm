@@ -145,9 +145,7 @@ footer li {
 
 .mentions {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-self: center;
     width: 60%;
     margin: 100px auto 0 auto;
 }

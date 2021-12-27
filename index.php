@@ -25,6 +25,21 @@
                 <button type="submit"><a href="app.php">Lancer<br>l'application</a></button>
             </div>
         </div>
+
+        <div class="showcase">
+            <div class="case">
+                <span class="nb">106257</span>
+                <span class="description">distributions</span>
+            </div>
+            <div class="case">
+                <span class="nb">4774</span>
+                <span class="description">réalisateurs</span>
+            </div>
+            <div class="case">
+                <span class="nb">4776</span>
+                <span class="description">films</span>
+            </div>
+        </div>
     </div>
 <?php require 'components/footer.php' ;?>
 </body>
