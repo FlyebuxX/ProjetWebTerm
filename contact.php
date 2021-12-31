@@ -17,7 +17,7 @@
     ?>
         <div class="contact-form">
             <h1 class="title-form">Nous Contacter</h1>
-            <div class="border"></div>
+            <div class="border"><img src="img/fancy_underline.png" alt="fancy_underline"></div>
             <h2 class="snd-form-title">Nos équipes vous répondrons dans les plus brefs délais.</h2>    
     
             <form method="POST" class="contact-fields" action="contact.php">

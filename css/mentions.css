@@ -57,7 +57,7 @@ nav {
     height: 100%;
     padding-right: 18rem;
     padding-left: 10rem;
-    background-color: rgba(156, 0, 0, 0.521);
+    background-color: rgba(156, 0, 0, .9);
 }
 
 nav ul {
@@ -82,6 +82,12 @@ nav ul li a {
     height: 200px;
 }
 
+.selected {
+    padding-bottom: 38px;
+    border-bottom: 2px solid #FFF;
+    border-width: 80%;
+}
+
 /* END NAVBAR */
 
 
@@ -89,7 +95,7 @@ nav ul li a {
 /* ARTICLE */
 
 article {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.822), rgb(27, 3, 3));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgb(14, 2, 2));
     padding: 2em 2em 2em 3em;
     border-radius: 5px;
     box-shadow: 6px 6px 20px rgb(36, 4, 4);

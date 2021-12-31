@@ -41,7 +41,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check31" onclick="is_checked(31)">
                     <div id="code-show31">
-                        <code><span class="sql-word">SELECT </span>Réalisateur<br><span class="sql-word">FROM</span> realisateurs<br><span class="sql-word">WHERE </span>Id_Films = (<span class="sql-word">SELECT </span>Id_Films<span class="sql-word"><br>FROM</span> films  <span class="sql-word">WHERE</span> Revenus_Générés = (<span class="sql-word">SELECT</span> max(Revenus_Générés) <span class="sql-word">FROM</span> films))<br><span class="sql-word">LIMIT</span> ' . $_GET['nb31'])</code>
+                        <code><span class="sql-word">SELECT </span>Réalisateur<br><span class="sql-word">FROM</span> realisateurs<br><span class="sql-word">WHERE </span>Id_Films = (<span class="sql-word">SELECT </span>Id_Films<span class="sql-word"><br>FROM</span> films  <span class="sql-word">WHERE</span> Revenus_Générés = (<span class="sql-word">SELECT</span> max(Revenus_Générés) <span class="sql-word">FROM</span> films))<br><span class="sql-word">LIMIT</span> $_GET['nb31'])</code>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check32" onclick="is_checked(32)">
                     <div id="code-show32">
-                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span>films, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = "Bruce Willis"<br><span class="sql-word">LIMIT</span> ' . $_GET['nb32']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM </span>films, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = "Bruce Willis"<br><span class="sql-word">LIMIT</span> $_GET['nb32']</code>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check33" onclick="is_checked(33)">
                     <div id="code-show33">
-                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films, realisateurs<br><span class="sql-word">WHERE</span> films.Id_Films = realisateurs.Id_Films<br><span class="sql-word">AND</span> Réalisateur = "Luc Besson"<br><span class="sql-word">AND</span> films.Durée > "120"<br><span class="sql-word">LIMIT</span> ' . $_GET['nb33']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films, realisateurs<br><span class="sql-word">WHERE</span> films.Id_Films = realisateurs.Id_Films<br><span class="sql-word">AND</span> Réalisateur = "Luc Besson"<br><span class="sql-word">AND</span> films.Durée > "120"<br><span class="sql-word">LIMIT</span> $_GET['nb33']</code>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check34" onclick="is_checked(34)">
                     <div id="code-show34">
-                        <code><span class="sql-word">SELECT</span> Titre_Original, Genres<br><span class="sql-word">FROM</span> films, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = "Cameron Diaz"<br><span class="sql-word">AND</span> films.Genres = "Comedy" <span class="sql-word"><br>AND</span> films.Année_Production > (<span class="sql-word">SELECT</span> Année_Production <span class="sql-word">FROM</span> films <span class="sql-word">WHERE</span> Titre_Original = "Shrek")<br><span class="sql-word">LIMIT</span> ' . $_GET['nb34']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original, Genres<br><span class="sql-word">FROM</span> films, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = "Cameron Diaz"<br><span class="sql-word">AND</span> films.Genres = "Comedy" <span class="sql-word"><br>AND</span> films.Année_Production > (<span class="sql-word">SELECT</span> Année_Production <span class="sql-word">FROM</span> films <span class="sql-word">WHERE</span> Titre_Original = "Shrek")<br><span class="sql-word">LIMIT</span> $_GET['nb34']</code>
                     </div>
                 </div>
             </div>

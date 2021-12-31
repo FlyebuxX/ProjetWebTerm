@@ -11,9 +11,10 @@ window.addEventListener("scroll", function() {
     } else if (scrollTop == 0) {
         navbar.style.top = "0";
         navbar.style.background = "";
+        navbar.style.marginTop = "3rem";
     } else {
         navbar.style.top = "0";
+        navbar.style.marginTop = "0rem";
     }
-
     lastScrollTop = scrollTop;
 });

@@ -13,8 +13,8 @@ a {
 
 
 body {
-    background: center / contain linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../img/bg.jpg");
-    background-position: 0 517%;
+    background: center / contain linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../img/bg2.jpg");
+    background-position: 0 70%;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #FFF;
@@ -57,7 +57,7 @@ nav {
     height: 100%;
     padding-right: 18rem;
     padding-left: 10rem;
-    background-color: rgba(156, 0, 0, 0.521);
+    background-color: rgba(156, 0, 0, .9);
 }
 
 nav ul {
@@ -138,6 +138,12 @@ button {
     color: #FFF;
     text-align: center;
     font-weight: bold;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgba(243, 13, 13, 0.9);
+    transition: .5s;
 }
 
 .showcase {
@@ -146,11 +152,18 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 46%;
-    margin: 25rem auto 10rem 0;
+    margin: 25rem auto 20rem 0;
     padding: 2em 5em 2em 5em;
     font-family: 'Indie Flower', serif;
-    background-color: rgba(48, 36, 36, 0.281);
     border-radius: 3px;
+    background-color: rgba(17, 17, 17, 0.7);
+    box-shadow: 10px 10px 30px rgba(255, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.showcase:hover {
+    box-shadow: 10px 10px 30px rgba(255, 0, 0, 0.3);
+    transition: .5s;
 }
 
 .case {

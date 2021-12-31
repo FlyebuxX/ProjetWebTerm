@@ -41,7 +41,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check11" onclick="is_checked(11)">
                     <div id="code-show11">
-                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> lower(Titre_Original) like "the%"<br><span class="sql-word">LIMIT</span> ' . $_GET['nb11']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> lower(Titre_Original) like "the%"<br><span class="sql-word">LIMIT</span> $_GET['nb11']</code>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check12" onclick="is_checked(12)">
                     <div id="code-show12">
-                        <code><span class="sql-word">SELECT DISTINCT</span> Distribution<br><span class="sql-word">FROM</span> distributions<br><span class="sql-word">WHERE</span> lower(Distribution) like "bruce%"<br><span class="sql-word">LIMIT</span> ' . $_GET['nb12']</code>
+                        <code><span class="sql-word">SELECT DISTINCT</span> Distribution<br><span class="sql-word">FROM</span> distributions<br><span class="sql-word">WHERE</span> lower(Distribution) like "bruce%"<br><span class="sql-word">LIMIT</span> $_GET['nb12']</code>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check13" onclick="is_checked(13)">
                     <div id="code-show13">
-                        <code><span class="sql-word">SELECT</span> Titre_Original, Langue_Originale <span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres in ("Action")<br>and Langue_Originale != "en"<br><span class="sql-word">LIMIT</span> ' . $_GET['nb13']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original, Langue_Originale <span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres in ("Action")<br>and Langue_Originale != "en"<br><span class="sql-word">LIMIT</span> $_GET['nb13']</code>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <label for="">Afficher la requête SQL</label>
                     <input type="checkbox" name="checkbox" id="check14" onclick="is_checked(14)">
                     <div id="code-show14">
-                        <code><span class="sql-word">SELECT</span> Titre_Original, Genres<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Durée = ""<br><span class="sql-word">LIMIT</span> ' . $_GET['nb14']</code>
+                        <code><span class="sql-word">SELECT</span> Titre_Original, Genres<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Durée = ""<br><span class="sql-word">LIMIT</span> $_GET['nb14']</code>
                     </div>
                 </div>
             </div>
