@@ -8,27 +8,10 @@
     <link rel="stylesheet" href="<?= $css; ?>">
     <link rel="icon" href="img/logo.png">
 
-    <!-- Indie Flower -->
+    <!-- Cinzel, Indie Flower, Montserrat, Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300;400;500&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
-
-    <!-- CINZEL -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Indie+Flower&family=Montserrat:wght@500&family=Raleway:wght@700" rel="stylesheet"> 
 
     <!-- Import Icons -->
      <script src="https://kit.fontawesome.com/cb5781e2cc.js" crossorigin="anonymous"></script>

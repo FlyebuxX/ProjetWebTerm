@@ -1,6 +1,7 @@
 <?php
     $title = "Projet - Salle n°3";
     $css = "css/pages3.css";
+    $current_page = "page3.php";
     require 'assets/fix_nb.php';
 
     $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "Xoneye@4");
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="right-part">
-                <?php require 'queries/form3/query1.php'; ?>
+                <?php require 'queries/form4/query1.php'; ?>
             </div>
         </div>
 
@@ -117,8 +118,12 @@
         </div>
     </div>
 
+    <p class="end">The End</p>
+    <?php require 'components/top_page.php'; ?>
+
     <?php require 'components/nav-forms.php' ; ?>
 </div>
+
 <hr>
 <?php require 'components/footer.php'; ?>
 

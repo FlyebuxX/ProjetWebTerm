@@ -13,8 +13,8 @@ a {
 
 
 body {
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/room3.jpg');
-    background-position: 200% 15%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('../img/room3.jpg');
+    background-position: 200% 80%;
     background-size: cover, 100%;
     background-attachment: scroll, fixed;
     font-family: 'Montserrat', sans-serif;
@@ -42,24 +42,26 @@ body {
     letter-spacing: .1em;
     padding: 0 0 0 4rem;
     margin-top: 3rem;
-    padding-right: 18rem;
-    padding-left: 10rem;
-    background-color: rgba(156, 0, 0, .9);
 }
 
 .line {
     position: absolute;
     top: 3rem;
     left: 20rem;
-    background-color: rgb(255, 51, 0);
-    width: 35rem;
+    background-color: rgb(214, 10, 10);
+    width: calc(100% - 86rem);
     height: 0.1rem;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     height: 100%;
+    padding-right: 18rem;
+    padding-left: 10rem;
+    background-color: rgb(95, 3, 3);
+    box-shadow: 0 3px 10px #000;
+    border-top-left-radius: 30px;
 }
 
 nav ul {
@@ -101,40 +103,43 @@ nav ul li a {
 }
 
 .nav-queries {
-    font-weight: 600;
-    font-size: 1.2em;
-    width: 100%;
-    margin: 30px auto;
-    font-family: 'Cinzel';
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', serif;
+    margin: 2rem auto;
+    font-size: 1em;
+    width: 60%;
+    height: 5rem;
+    background: linear-gradient(0.25turn, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .nav-queries ul {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 50%;
+    border-radius: 30px;
 }
 
 .nav-queries ul li {
     list-style-type: none;
 }
 
+
 .forms {
-    margin: 200px auto;
+    margin: 200px auto 0 auto;
 }
 
-
 .form-title {
-    color: rgb(206, 13, 13);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Cinzel', sans-serif;
-    font-weight: bold;
     font-size: 40px;
-    text-shadow: 1px 1px 2px red;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: .5em;
     width: 40%;
     margin: auto;
+    text-decoration: underline rgb(151, 0, 0);
 }
 
 td, th {
@@ -167,7 +172,7 @@ table {
     font-family: sans-serif;
     font-size: .8rem;
     margin: 0 auto 80px auto;
-    box-shadow: 10px 10px 30px rgb(36, 4, 4);
+    box-shadow: 1px 1px 30px rgb(36, 4, 4), -1px -1px 30px rgb(36, 4, 4);
 }
 
 .left-part {
@@ -300,6 +305,40 @@ span.sql-word {
 
 .nav-forms nav ul li {
     list-style-type: none;
+}
+
+.end {
+    text-align: center;
+    margin: 9rem auto 2rem auto;
+    font-size: 2.2em;
+    font-family: 'Cinzel', serif;
+}
+
+.go_top {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 6rem;
+    margin: 0 auto 3rem auto;
+}
+
+.go_top button {
+    border-style: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(110, 4, 4);
+    margin-right: 1rem;
+}
+
+.go-top p {
+    font-style: italic;
+}
+
+.go_top button i {
+    font-size: 30px;
 }
 
 /* END FORMS PAGE */

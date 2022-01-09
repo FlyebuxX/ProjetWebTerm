@@ -64,10 +64,10 @@
         
     <script src="assets/change_bg2.js"></script>
     </div>
-
+    <?php require 'components/footer.php'; ?>
+    <script src="assets/ON_OFF.js"></script>
 </body>
 
 
-<script src="assets/ON_OFF.js"></script>
 
-<?php require 'components/footer.php'; ?>
+

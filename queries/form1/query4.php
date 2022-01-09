@@ -4,7 +4,7 @@
 
     $query14 = $db->query('SELECT Titre_Original, Genres FROM films WHERE Durée = "" LIMIT ' . $_GET['nb14']);
     while ($donnees = $query14 -> fetch()) {
-        echo '<tr><td>' . $donnees['Titre_Original'] . $donnees['Genres'] . '</td><tr>';
+        echo '<tr><td>' . $donnees['Titre_Original'] . " | Genre : " . $donnees['Genres'] . '</td><tr>';
     }
     $query14 -> closeCursor();
 

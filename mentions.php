@@ -43,6 +43,6 @@
             </div>
         </article>
     </div>
+    <?php require 'components/footer.php'; ?>
 </body>
 
-<?php require 'components/footer.php'; ?>

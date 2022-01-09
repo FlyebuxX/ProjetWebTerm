@@ -66,7 +66,7 @@
                         <label for="">Afficher la requête SQL</label>
                         <input type="checkbox" name="checkbox" id="check22" onclick="is_checked(22)">
                         <div id="code-show22">
-                            <code><span class="sql-word">SELECT DISTINCT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Langue_Originale = "ja" <span class="sql-word">AND</span> Durée != ""<br><span class="sql-word">ORDER BY</span> Durée <span class="sql-word">ASC</span><br><span class="sql-word">LIMIT</span> $_GET['nb1']</code>
+                            <code><span class="sql-word">SELECT DISTINCT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Langue_Originale = "ja"<br><span class="sql-word">AND</span> Durée != ""<br><span class="sql-word">ORDER BY</span> Durée <span class="sql-word">ASC</span><br><span class="sql-word">LIMIT</span> $_GET['nb1']</code>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                         <label for="">Afficher la requête SQL</label>
                         <input type="checkbox" name="checkbox" id="check24" onclick="is_checked(24)">
                         <div id="code-show24">
-                            <code><span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT))<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres in ("Thriller") <span class="sql-word">LIMIT</span> $_GET['nb24']</code>
+                            <code><span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT))<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres in ("Thriller")<br><span class="sql-word">LIMIT</span> $_GET['nb24']</code>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <label for="">Afficher la requête SQL</label>
                         <input type="checkbox" name="checkbox" id="check25" onclick="is_checked(25)">
                         <div id="code-show25">
-                            <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres = "Horror"<br><span class="sql-word">AND</span> CAST(Revenus_Générés <span class="sql-word">AS</span> INT) > (<span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT)) <span class="sql-word">FROM</span> films)<br><span class="sql-word">LIMIT</span> ' . $_GET['nb25']</code>
+                            <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres = "Horror"<br><span class="sql-word">AND</span> CAST(Revenus_Générés <span class="sql-word">AS</span> INT) > (<span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT)) <span class="sql-word">FROM</span> films)<br><span class="sql-word">LIMIT</span> $_GET['nb25']</code>
                         </div>
                     </div>
                 </div>
@@ -141,6 +141,8 @@
             </div>
         </div>
 
+        <p class="end">The End</p>
+        <?php require 'components/top_page.php'; ?>
 
         <?php require 'components/nav-forms.php' ; ?>
     </div>

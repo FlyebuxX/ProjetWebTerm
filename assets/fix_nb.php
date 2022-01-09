@@ -48,4 +48,12 @@
 
     if (!isset($_GET['nb34'])) {
         $_GET['nb34'] = 2;
-    };
+    }
+    
+    if (!isset($_GET['actor_name'])) {
+        $_GET['actor_name'] = '';
+    }
+    if (!isset($_GET['director_name'])) {
+        $_GET['director_name'] = '';
+    }
+    ;
