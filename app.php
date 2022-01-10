@@ -10,6 +10,7 @@
 ?>
 
 <body>
+    <script src="assets/new-height.js"></script>
 <div id="container">
     <?php
         $current = "<li><a href=\"index.php\">01. ACCUEIL</a></li>
@@ -29,85 +30,51 @@
         </ul>
     </nav> -->
 
-
     <div class="forms">
         <div class="form" id="query1">
-            <div class="left-part">
+            <div id="left-part41">
                 <form action="app.php#query1" method="get">
-                    <label for="actor_name">Acteur</label>
-                    <input type="text" id="actor_name" name="actor_name" value="">
-                    <input type="submit" value="Afficher">
-                </form>
-                <div class="code">
-                    <label for="">Afficher la requête SQL</label>
-                    <input type="checkbox" name="checkbox" id="check41" onclick="is_checked(41)">
-                    <div id="code-show41">
-                        <code></code>
+                    <div class="fst">
+                        <label for="">Choisissez une option</label>
+                        <select name="choice" id="choice" onchange="getSelectedValue();">
+                            <option value="">-- Choisir une option --</option>
+                            <option value="Saisir un acteur" name="actor_name">Acteur (fiche 4)</option>
+                            <option value="Saisir un réalisateur" name="director_name">Chercher un réalisateur</option>
+                            <option value="Saisir un film" name="film_name">Chercher un film</option>
+                            <option value="Chercher un acteur" name="actor_name_2">Chercher un acteur</option>
+                        </select>
+
+                    <script>
+                        function getSelectedValue() {
+                            var selectedValue = document.getElementById("choice").value;
+                            document.getElementById("label_choice").innerHTML = selectedValue;
+                        }
+                    </script>
                     </div>
-                </div>
+
+                    <div class="snd">
+                        <label for="" name="label_choice" id="label_choice"></label>
+                        <input type="text" name="choice_value" value="">
+                    </div>
+
+                    <div class="thd">
+                        <input type="submit" value="Afficher">
+                    </div>
+                </form>
+
+
+
+                
+                <!-- <div class="code">
+                    <label for="">Afficher la requête SQL</label>
+                    <input type="checkbox" name="checkbox" id="check41" onclick="change_height(41)">
+                    <div id="code-show41">
+                        <code><span class="sql-word">SELECT DISTINCT</span> films.Titre_Original, films.Année_Production, realisateurs.Réalisateur<br><span class="sql-word">FROM</span> films, realisateurs, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = ?<br><span class="sql-word">AND</span> realisateurs.Id_Films = films.Id_Films<br><span class="sql-word">ORDER BY</span> Durée <span class="sql-word">DESC</span><br><span class="sql-word">LIMIT</span> 1</code>
+                    </div>
+                </div> -->
             </div>
             <div class="right-part">
                 <?php require 'queries/form4/query1.php'; ?>
-            </div>
-        </div>
-
-        <div class="form" id="query2">
-            <div class="left-part">
-                <form action="app.php#query2" method="get">
-                    <label for="director_name">Chercher un réalisateur</label>
-                    <input type="text" id="director_name" name="director_name" value="">
-                    <input type="submit" value="Afficher">
-                </form>
-                <div class="code">
-                    <label for="">Afficher la requête SQL</label>
-                    <input type="checkbox" name="checkbox" id="check42" onclick="is_checked(42)">
-                    <div id="code-show42">
-                        <code></code>
-                    </div>
-                </div>
-            </div>
-            <div class="right-part">
-                <?php require 'queries/form4/query2.php'; ?>
-            </div>
-        </div>
-
-        <div class="form" id="query3">
-            <div class="left-part">
-                <form action="app.php#query3" method="get">
-                    <label for="director_name">Chercher un acteur</label>
-                    <input type="text" id="actor_name_2" name="actor_name_2" value="">
-                    <input type="submit" value="Afficher">
-                </form>
-                <div class="code">
-                    <label for="">Afficher la requête SQL</label>
-                    <input type="checkbox" name="checkbox" id="check43" onclick="is_checked(43)">
-                    <div id="code-show43">
-                        <code></code>
-                    </div>
-                </div>
-            </div>
-            <div class="right-part">
-                <?php require 'queries/form4/query3.php'; ?>
-            </div>
-        </div>
-
-        <div class="form" id="query4">
-            <div class="left-part">
-                <form action="app.php#query4" method="get">
-                    <label for="film_name">Chercher un film</label>
-                    <input type="text" id="film_name" name="film_name" value="">
-                    <input type="submit" value="Afficher">
-                </form>
-                <div class="code">
-                    <label for="">Afficher la requête SQL</label>
-                    <input type="checkbox" name="checkbox" id="check44" onclick="is_checked(44)">
-                    <div id="code-show44">
-                        <code></code>
-                    </div>
-                </div>
-            </div>
-            <div class="right-part">
-                <?php require 'queries/form4/query4.php'; ?>
             </div>
         </div>
 
