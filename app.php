@@ -33,7 +33,7 @@
     <div class="forms">
         <div class="form" id="query1">
             <div id="left-part41">
-                <form action="app.php#query1" method="get">
+                <form action="app.php" method="get">
                     <div class="fst">
                         <label for="">Choisissez une option</label>
                         <select name="choice" id="choice" onchange="getSelectedValue();">
@@ -61,9 +61,6 @@
                         <input type="submit" value="Afficher">
                     </div>
                 </form>
-
-
-
                 
                 <!-- <div class="code">
                     <label for="">Afficher la requête SQL</label>
@@ -79,8 +76,7 @@
         </div>
 
     </div>
-
-    <p class="end">The End</p>
+    
     <?php require 'components/top_page.php'; ?>
 
     <?php require 'components/nav-forms.php' ; ?>
