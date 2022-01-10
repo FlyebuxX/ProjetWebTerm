@@ -1,13 +1,20 @@
 <?php
     $actors = $db->query('SELECT DISTINCT distributions.Distribution FROM distributions');
     $directors = $db->query('SELECT DISTINCT Réalisateur FROM realisateurs');
+    $films = $db->query('SELECT DISTINCT films.Titre_Original FROM films');
+
     $actors_list = [];
     $directors_list = [];
+    $films_list = [];
+
     while($donnees = $actors->fetch()) {
         array_push($actors_list, $donnees['Distribution']);
     };
     while ($donnees = $directors->fetch()) {
         array_push($directors_list, $donnees['Réalisateur']);
+    };
+    while ($donnees = $films->fetch()) {
+        array_push($films_list, $donnees['Titre_Original']);
     };
 
     if (isset($_GET['choice_value']) && in_array(strval($_GET['choice_value']), $actors_list) && $_GET['choice'] === 'Saisir un acteur') {
@@ -36,7 +43,7 @@
 
     } else if (isset($_GET['choice_value']) && in_array(strval($_GET['choice_value']), $directors_list) && $_GET['choice'] === 'Saisir un réalisateur') {
         echo "<table>";
-        echo "<th>Films réalisés par" . " " . $_GET['choice_value']. " " . "</th>";
+        echo "<th>Films réalisés par" . " " . $_GET['choice_value'] . "</th>";
 
         $query42 = $db->prepare('SELECT * from films, realisateurs WHERE films.Id_Films = realisateurs.Id_Films AND realisateurs.Réalisateur = ?');
         $query42->execute(array(strval($_GET['choice_value'])));
@@ -46,4 +53,17 @@
         }
         $query42 -> closeCursor();
         echo "</table>";
-    } 
+
+    }  else if (isset($_GET['choice_value']) && in_array(strval($_GET['choice_value']), $films_list) && $_GET['choice'] === 'Saisir un film') {
+        echo "<table>";
+        echo "<th>Information sur le film" . " " . $_GET['choice_value'] . "<td>Année</td><td>Durée (min)</td><td>Langue</td><td>Genres</td><td>Revenus générés</td></th>";
+
+        $query43 = $db->prepare('SELECT * from films WHERE Titre_Original = ?');
+        $query43->execute(array(strval($_GET['choice_value'])));
+
+        while($donnees = $query43->fetch()) {
+            echo '<tr><td>' . $donnees['Titre_Original'] . '</td><td>' . $donnees['Année_Production'] . '</td><td>' . $donnees['Durée'] . '</td><td>' . $donnees['Langue_Originale'] . '</td><td>' . $donnees['Genres'] . '</td><td>' . $donnees['Revenus_Générés'] . '</td><tr>';
+        }
+        $query43 -> closeCursor();
+        echo "</table>";
+    }

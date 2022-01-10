@@ -17,7 +17,6 @@ body {
     background-position: 200% 410%;
     background-size: cover, 100%;
     background-attachment: scroll, fixed;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #FFF;
@@ -106,6 +105,7 @@ nav ul li a {
     width: 50%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.699);
+    margin-bottom: 14rem;
 }
 
 .form {
@@ -202,6 +202,7 @@ table {
     font-size: .8rem;
     margin: 3rem auto 80px auto;
     box-shadow: 1px 1px 30px rgb(36, 4, 4), -1px -1px 30px rgb(66, 7, 7);
+    width: 95%;
 }
 
 #left-part41 {
