@@ -10,7 +10,6 @@
 ?>
 
 <body>
-    <script src="assets/new-height.js"></script>
 <div id="container">
     <?php
         $current = "<li><a href=\"index.php\">01. ACCUEIL</a></li>
@@ -20,20 +19,10 @@
         require 'components/navbar.php'; 
     ?>
     <h1 class="form-title">Fiche n°4</h1>
-<!-- 
-    <nav class="nav-queries">
-        <ul>
-            <li><a href="#query1">Requête n°1</a></li>
-            <li><a href="#query2">Requête n°2</a></li>
-            <li><a href="#query3">Requête n°3</a></li>
-            <li><a href="#query4">Requête n°4</a></li>
-        </ul>
-    </nav> -->
-
     <div class="forms">
         <div class="form" id="query1">
-            <div id="left-part41">
-                <form action="app.php" method="get">
+            <div id="left-part">
+                <form action="app_requests.php" method="get">
                     <div class="fst">
                         <label for="">Choisissez une option</label>
                         <select name="choice" id="choice" onchange="getSelectedValue();">
@@ -61,16 +50,8 @@
                         <input type="submit" value="Afficher">
                     </div>
                 </form>
-                
-                <!-- <div class="code">
-                    <label for="">Afficher la requête SQL</label>
-                    <input type="checkbox" name="checkbox" id="check41" onclick="change_height(41)">
-                    <div id="code-show41">
-                        <code><span class="sql-word">SELECT DISTINCT</span> films.Titre_Original, films.Année_Production, realisateurs.Réalisateur<br><span class="sql-word">FROM</span> films, realisateurs, distributions<br><span class="sql-word">WHERE</span> films.Id_Films = distributions.Id_Films<br><span class="sql-word">AND</span> distributions.Distribution = ?<br><span class="sql-word">AND</span> realisateurs.Id_Films = films.Id_Films<br><span class="sql-word">ORDER BY</span> Durée <span class="sql-word">DESC</span><br><span class="sql-word">LIMIT</span> 1</code>
-                    </div>
-                </div> -->
             </div>
-            <div class="right-part">
+            <div id="right-part">
                 <?php require 'queries/form4/query1.php'; ?>
             </div>
         </div>
