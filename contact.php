@@ -35,8 +35,11 @@
 
                 <label for="">MESSAGE *</label>
                 <textarea class="contact-form-textarea" name="message" required></textarea>
-                <input type="submit" name="submit-btn" class="contact-form-btn" value="Envoyer">
-                <input type="reset" class="contact-form-btn" value="Annuler tout">
+                
+                <div class="send">
+                    <input type="submit" name="submit-btn" class="contact-form-btn" value="Envoyer">
+                    <input type="reset" class="contact-form-btn" value="Annuler tout">
+                </div>
             </form>
         </div>
         <div class="map-form">

@@ -161,7 +161,17 @@ nav ul li a {
 
 .contact-form-btn:hover {
     transition: .7s ease;
-    background-color: #fd00008e;
+    background-color: #a707078e;
+    cursor: pointer;
+}
+
+.send {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
 }
 
 .contact-fields input:focus, .contact-form-textarea:focus {

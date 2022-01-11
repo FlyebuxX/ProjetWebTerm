@@ -36,7 +36,7 @@
         $query41->execute(array(strval($_GET['choice_value'])));
 
         while($donnees = $query41->fetch()) {
-            echo '<tr><td>' . $donnees['Titre_Original'] . ", " . $donnees['Année_Production'] . ", " . $donnees['Réalisateur'] . '</td><tr>';
+            echo '<tr><td>' . $donnees['Titre_Original'] . " | " . $donnees['Année_Production'] . " | " . $donnees['Réalisateur'] . '</td><tr>';
         }
         $query41 -> closeCursor();
         echo "</table>";

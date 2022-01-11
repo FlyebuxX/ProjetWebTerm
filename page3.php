@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="right-part">
-                <?php require 'queries/form4/query1.php'; ?>
+                <?php require 'queries/form3/query1.php'; ?>
             </div>
         </div>
 

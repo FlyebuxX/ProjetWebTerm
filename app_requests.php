@@ -23,7 +23,7 @@
             <div id="code-show43">
                 <code><span class="sql-word">SELECT</span> * <br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Titre_Original = ?</code><br><br>
                 <code><span class="sql-word">SELECT</span> Réalisateur <br><span class="sql-word">FROM</span> realisateurs <br><span class="sql-word">WHERE</span> Id_Films = (<span class="sql-word">SELECT</span> Id_Films <span class="sql-word">FROM</span> films <span class="sql-word">WHERE</span> Titre_Original = ?)</code><br><br>
-                <code><span class="sql-word">SELECT</span> Distribution <br><span class="sql-word">FROM</span> distributions <br><span class="sql-word">WHERE</span> Id_Films = (<span class="sql-word">SELECT</span> Id_Films <span class="sql-word">FROM</span> films <span class="sql-word">WHERE</span> Titre_Original = ?)</code><br><br>
+                <code><span class="sql-word">SELECT</span> Distribution <br><span class="sql-word">FROM</span> distributions <br><span class="sql-word">WHERE</span> Id_Films = (<span class="sql-word">SELECT</span> Id_Films <span class="sql-word">FROM</span> films <span class="sql-word">WHERE</span> Titre_Original = ?)</code>
             </div>
         </div>';
     } else if ($_GET['choice'] === 'Chercher un acteur') {
