@@ -64,6 +64,13 @@ body {
     border-top-left-radius: 30px;
 }
 
+@media screen and (max-width:1440px) {
+    .navbar {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+}
+
 nav ul {
     margin: auto;
     display: flex;

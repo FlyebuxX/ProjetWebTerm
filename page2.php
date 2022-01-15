@@ -44,7 +44,7 @@
                         <label for="">Afficher la requête SQL</label>
                         <input type="checkbox" name="checkbox" id="check21" onclick="is_checked(21)">
                         <div id="code-show21">
-                            <code><span class="sql-word">SELECT DISITINCT</span> count(Réalisateur)<br><span class="sql-word">FROM</span> realisateurs<br><span class="sql-word">LIMIT</span> $_GET['nb21']</code>
+                            <code><span class="sql-word">SELECT </span> count(<span class="sql-word">DISTINCT</span> Réalisateur)<br><span class="sql-word">FROM</span> realisateurs<br><span class="sql-word">LIMIT</span> $_GET['nb21']</code>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="left-part">
                     <form action="page2.php#query5" method="get" oninput="result.value=parseInt(nb25.value)">
                     <label for="nb25">Afficher plus de résultats</label>
-                        <input type="range" id="nb_resultat" name="nb25" min="0" max="24" value="10">
+                        <input type="range" id="nb_resultat" name="nb25" min="0" max="10" value="10">
                         <output name="result">10</output>
                         <input type="submit" value="Afficher">
                     </form>
@@ -131,7 +131,7 @@
                         <label for="">Afficher la requête SQL</label>
                         <input type="checkbox" name="checkbox" id="check25" onclick="is_checked(25)">
                         <div id="code-show25">
-                            <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres = "Horror"<br><span class="sql-word">AND</span> CAST(Revenus_Générés <span class="sql-word">AS</span> INT) > (<span class="sql-word">SELECT</span> avg(CAST(Revenus_Générés <span class="sql-word">AS</span> INT)) <span class="sql-word">FROM</span> films)<br><span class="sql-word">LIMIT</span> $_GET['nb25']</code>
+                            <code><span class="sql-word">SELECT</span> Titre_Original<br><span class="sql-word">FROM</span> films<br><span class="sql-word">WHERE</span> Genres = "Horror"<br><span class="sql-word">AND</span> Revenus_Générés <span class="sql-word">AS</span> > (<span class="sql-word">SELECT</span> avg(Revenus_Générés) <span class="sql-word">FROM</span> films)<br><span class="sql-word">LIMIT</span> $_GET['nb25']</code>
                         </div>
                     </div>
                 </div>

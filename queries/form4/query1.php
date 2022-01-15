@@ -108,7 +108,3 @@
     } else if (isset($_GET['choice_value'])) {
         echo '<div class="error">Erreur. Vérifier :<br>1- Avez-vous saisi une option ?<br>2- L\'acteur, le film ou le réalisateur saisi est mal ortographié<br>3- La donnée demandée n\'appartient pas à la base</div>';
     }
-
-
-    // afficher acteurs + réalisateur du film choisi
-    // reste acteurs

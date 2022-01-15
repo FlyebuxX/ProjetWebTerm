@@ -40,8 +40,6 @@
 ; ?>
 
 
-
-
 <?php
     $title = "Application - Salle n°4";
     $css = "css/app.css";
