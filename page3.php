@@ -4,7 +4,7 @@
     $current_page = "page3.php";
     require 'assets/fix_nb.php';
 
-    $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "Xoneye@4");
+    $db = new PDO('mysql:host=mysql-valentin-eberhardt.alwaysdata.net;dbname=valentin-eberhardt_dbcinema;charset=utf8', '224794', "");
     
     require 'components/header.php';
 ?>
